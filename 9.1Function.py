@@ -1,3 +1,16 @@
+x =5
+print("Hello")
+
+def lyrics_print():
+    print("I m lambark, and i m okey.")
+    print("I sleep all night and work all day.")
+
+print("YO")
+lyrics_print()
+x+=2
+print(x)
+
+
 # Input from users
 def fullname():
     fname = input("Enter your First name: ")
