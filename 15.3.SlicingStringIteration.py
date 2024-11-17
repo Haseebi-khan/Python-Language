@@ -80,3 +80,8 @@ print(sspos)
 host = id_name_university[atpos+1 : sspos]
 print("Host of this domain is: ", host)
 
+
+
+word = "bananana"
+i = word.find("na")
+print(i)
