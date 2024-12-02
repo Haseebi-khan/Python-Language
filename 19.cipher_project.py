@@ -1,7 +1,7 @@
 
 # text = 'Hello World'
 # text[0] = 't' # error
-# text = 'Albatross'
+# text = 'jhjkasd'
 
 # shift = 3
 # alphabet = 'abcdefghijklmnopqrstuvwxyz'
@@ -82,13 +82,6 @@ text = 'Hello Haseeb'
 # print(encryption)
 # decryption = vigenere(encryption, custom_key, -1)
 # print(decryption)
-
-
-
-
-
-
-
 
 # cipher project is complete.
 text = 'Hello Haseeb'
