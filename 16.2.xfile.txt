@@ -1,0 +1,21 @@
+Craig Smith explores the media’s role in AI conversations
+
+RIYADH: The media’s primary role is to translate complex ideas into digestible content for the public, said Craig Smith, host of the Eye on AI podcast and a former correspondent.
+
+In a recent conversation with the Saudi Data and Artificial Intelligence Authority’s GAIN podcast, Smith discussed the rapidly evolving field of artificial intelligence and the challenges media faces in accurately covering it amid both excitement and misinformation.
+
+“You can put AI in a robot, but robotics is one field, and AI is another,” Smith explained, stressing the need for more precise portrayals of AI in the media.
+
+As AI discussions have intensified in the past two years, particularly around its potential threats, Smith emphasized that these debates are meant to encourage further research into AI safety and prompt regulation. However, he noted that the popular press often misinterprets the purpose of these discussions, leading to sensational headlines that contribute to widespread fear.
+
+“The purpose of that discussion is to generate more research around the safety of AI and to spur regulation to get the governments looking at what’s happening,” Smith said.
+
+“But the media often misses this goal, resulting in alarmist narratives like AI will ‘kill us all,’ which detracts from the vital work of understanding and regulating this technology.”
+
+While it’s easy to imagine a dystopian future for AI, Smith pointed out the far more nuanced reality. “We’re still working on getting large language models to be truthful and stop spouting nonsense,” he said, illustrating the long and challenging path ahead in developing reliable AI systems.
+
+Reflecting on the rapid pace of change in the field, Smith highlighted the exciting progress in AI research, particularly since the introduction of the transformer algorithm in 2017.
+
+“It was Ilya Sutskever at OpenAI who built a model around the transformer algorithm and scaled it up,” Smith noted, acknowledging the profound impact this algorithm has had on the development of large language models like ChatGPT and Claude.
+
+Smith’s insights underscored the media’s crucial responsibility in accurately covering AI. By bridging the gap between complex technological advancements and public understanding, journalists have the power to foster informed discussions that will ultimately shape the future of AI in society.
