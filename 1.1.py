@@ -1,11 +1,7 @@
-# models, print and comments + multiLines comments. 
+print("Hello world\n")
 
-import pyjokes
-
-# print("Jokes: ")
-
-joke = pyjokes.get_joke()
-
-print(joke)
-
-print("\n\n\n")
+print ("My first program")
+price = 100
+qty = 5
+total = price*qty
+print ("Total = ", total)
