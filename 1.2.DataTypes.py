@@ -56,4 +56,10 @@ print(id(a), id(b), id(c))
 print(a, b, c)
 
 
+complexdata = 2+4j
+print(type(complexdata))
 
+
+type("Wellcome")
+string = "newWellcome"
+type(string)
