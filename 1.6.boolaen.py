@@ -54,7 +54,8 @@ print("type of x = ", type(x))
 print("Conversion to integer data type")
 a = int(1)     # a will be 1
 b = int(2.2)   # b will be 2
-c = int("3")   # c will be 3
+c = int(float("3.3"))  # convert "3.3" to float 3.3, then to int 3
+# c = int("3.3")   # c will be 3
 
 print (a)
 print (b)
@@ -74,6 +75,14 @@ a = str(1)     # a will be "1"
 b = str(2.2)   # b will be "2.2"
 c = str("3.3") # c will be "3.3"
 
+print (a)
+print (b)
+print (c)
+
+
+a = int(1)     # a will be 1
+b = int(2.2)   # b will be 2
+c = int(float("3.3"))   # c will be 3
 print (a)
 print (b)
 print (c)

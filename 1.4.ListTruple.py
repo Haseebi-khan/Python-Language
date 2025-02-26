@@ -30,3 +30,41 @@ arr = array.array('i', [1, 2, 3, 4, 5])
 view = memoryview(arr)
 print(view)
 id(view)
+
+
+
+
+
+
+newList = ["Hello World!", 45]
+
+obj = list(newList)
+print(obj)
+
+string = "Haseeb Khan"
+
+liststr = list(string)
+
+print(liststr)
+
+del liststr[6]
+print(liststr)
+
+
+
+newTuple = tuple(string)
+
+print(newTuple, "\n\n")
+# del newTuple[6]
+
+# print(newTuple)
+
+list1 = list(newTuple)
+
+del list1[6]
+
+newTuple = tuple(list1)
+
+print(newTuple)
+
+
