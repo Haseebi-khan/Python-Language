@@ -20,3 +20,19 @@ print (dic.values()) # Prints all the values
 print("\n\n")
 
 print(dic)
+
+
+# set = {[34,23,"dfd",34], 12, 3.3, (45,33)}
+# print(set)
+
+# ---------------------------------------------------------------------------
+# TypeError                                 Traceback (most recent call last)
+# File d:\Codes\Python\Python-Language\1.5.Dictionary .py:1
+# ----> 1 set = {[34,23,"dfd",34], 12, 3.3, (45,33)}
+#       2 print(set)
+
+# TypeError: unhashable type: 'list'
+
+set = {4,3,2,"Python code" , 4+4j}
+print(set)
+print(type(set))
