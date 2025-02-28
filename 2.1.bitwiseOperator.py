@@ -15,8 +15,8 @@ print("a & b = ", a^d)
 
 print("~b = ", ~b)
 
-if -2 == ~d:
-    print("-2 is ~b")
+# if -2 == ~d:
+#     print("-2 is ~b")
 
 print(a<<2)     # 4 
 print(b>>1)     # 1
