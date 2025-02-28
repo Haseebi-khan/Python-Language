@@ -135,5 +135,11 @@ int main()
 
     string decodedText = binaryToText(decodeRLE(encodedBinary));
     cout << "Decoded Text: " << decodedText << endl;
+
+    int a = 10;
+    int b = 20;
+    a, b = b, a;
+    cout << a << " " << b;
+
     return 0;
 }
