@@ -59,7 +59,7 @@ c = int(float("3.3"))  # convert "3.3" to float 3.3, then to int 3
 
 print (a)
 print (b)
-print (c)
+print (type(c))
 
 print("Conversion to floating point number")
 a = float(1)     # a will be 1.0

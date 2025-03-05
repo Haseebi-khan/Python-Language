@@ -31,8 +31,8 @@ id(view)
 
 newList = ["Hello World!", 45]
 
-obj = list(newList)
-print(obj)
+# obj = list(newList)
+# print(obj)
 
 string = "Haseeb Khan"
 

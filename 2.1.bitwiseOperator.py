@@ -3,9 +3,9 @@ b = 2
 c = 5
 d = 1
 
-print("a & b = ", bin(a&b))
+print("a & b = ", bin(a&b)) 
 print("a & d = ", bin(a&d))
-print("a | c = ", bin(a|b))
+print("a | b = ", bin(a|b))
 
 f = bin(a|b)
 
