@@ -28,3 +28,14 @@ print(e)
 #       2 print(e)
 
 # ValueError: int() base must be >= 2 and <= 36, or 0
+
+
+
+
+a=10 #decimal
+b=0b10 #binary
+c=0O10 #octal
+d=0XA #Hexadecimal
+e=a+b+c+d
+
+print("Sum of all: ", e)
