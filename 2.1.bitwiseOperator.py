@@ -11,7 +11,7 @@ f = bin(a|b)
 
 print(int(f,2))
 
-print("a & b = ", a^d)
+print("a ^ b = ", a^b)
 
 print("~b = ", ~b)
 
