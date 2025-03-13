@@ -8,8 +8,6 @@ def printme( str ):
 printme("I'm first call to user defined function!")
 printme("Again second call to the same function")
 
-
-
 def testfunction(arg):
     print ("ID inside the function:", id(arg))
 
@@ -30,6 +28,7 @@ def testfunction(arg):
 var=10
 print ("ID before passing:", id(var))
 testfunction(var)
+print ("ID after passing:", id(var))
 print ("value after function call", var)
 
 # ID before passing: 140705612629192
@@ -42,11 +41,13 @@ def test_function(arg):
     print ("Inside function:",arg)
     print ("ID inside the function:", id(arg))
     arg=arg.append(100)
+    print ("ID inside the function after append:", id(arg))
 
-var=[10, 20, 30, 40]
+var = [10, 20, 30, 40]
 print ("ID before passing:", id(var))
 test_function(var)
 print ("list after function call", var)
+print ("ID after passing:", id(var))
 
 
 def printinfo( name, age ):
@@ -88,3 +89,50 @@ posFun(num1=6, num2=8, num3=5)
 
 # ////////////////////////////////////////////////////////////
 
+# List	    ✅ Yes	✅ Yes (modifies in place)	.append(), .pop()
+# Integer	❌ No	❌ No (new object created)	x = x + 1
+# String	❌ No	❌ No (new object created)	s = s + "abc"
+# Tuple	    ❌ No	❌ No	(1, 2, 3)
+
+
+def modify_var(x):
+    x = x + 10  # Create a new object
+    return x  # Return the new value
+
+num = 5
+num = modify_var(num)  # Reassign the returned value
+print(num)  # Output: 15
+
+# ////////////////////////////////////////////////////////////
+
+# z=11 is passed as a keyword argument 
+# (which is allowed because z comes after /).
+
+def posFun(x, y, /, z):
+    print(x + y + z)
+
+print("Evaluating positional-only arguments: ")
+posFun(33, 22, z=11) 
+
+# ////////////////////////////////////////////////////////////
+
+def posFun(*, num1, num2, num3):
+    print(num1 * num2 * num3)
+
+print("Evaluating keyword-only arguments: ")
+posFun(num1=6, num2=8, num3=5) 
+
+# ////////////////////////////////////////////////////////////
+
+# Function definition is here
+def print_info( arg1, *vartuple ):
+    "This prints a variable passed arguments"
+    print ("Output is: ")
+    print (arg1)
+    for var in vartuple:
+        print (var)
+    return;
+
+# Now you can call printinfo function
+print_info( 10 )
+print_info( 70, 60, 50 )
