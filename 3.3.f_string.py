@@ -22,16 +22,15 @@ txt = "For only {price:.2f} $dollers."
 print(txt.format(price = 34.6756657))
 
 price = 49.099999
-txt = "For only {price:.2f} $dollers."
-print(txt)
-
+# txt = "For only {price:.2f} $dollers."
+txt = "For only {:.2f} $dollers."
+print(txt.format(price))
 
 price = 49.099999
 txt = f"For only {price:.2f} $dollers."
 print(txt)
 
 print(type(f"{2*3}"))
-
 
 def greeting(details):
     match details:
