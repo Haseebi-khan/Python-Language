@@ -114,7 +114,7 @@ def posFun(x, y, /, z):
 print("Evaluating positional-only arguments: ")
 posFun(33, 22, z=11) 
 
-# ////////////////////////////////////////////////////////////
+# //////////////////////////////////////////////////////////////////////
 
 def posFun(*, num1, num2, num3):
     print(num1 * num2 * num3)
@@ -122,17 +122,45 @@ def posFun(*, num1, num2, num3):
 print("Evaluating keyword-only arguments: ")
 posFun(num1=6, num2=8, num3=5) 
 
-# ////////////////////////////////////////////////////////////
+# //////////////////////////////////////////////////////////////////////
 
 # Function definition is here
 def print_info( arg1, *vartuple ):
-    "This prints a variable passed arguments"
+    print(id("This prints a variable passed arguments"))
     print ("Output is: ")
     print (arg1)
     for var in vartuple:
         print (var)
     return;
 
+def print_info2( arg1, *vartuple ):
+    print(id("This prints a variable passed arguments"))
+    print ("Output is: ")
+    print (arg1)
+    for var in arg1:
+        print (var)
+    return;
+
 # Now you can call printinfo function
+something = [23,43,5,65,34]
+
 print_info( 10 )
 print_info( 70, 60, 50 )
+print_info2( something )
+
+# //////////////////////////////////////////////////////////////////////
+
+def Sum(x,y):
+    z = x + y
+    return z
+a,b, = 2,4
+print("a = {}, b = {}, a + b = {}.".format(a,b, Sum(a,b)))
+
+# //////////////////////////////////////////////////////////////////////
+
+def myfunction(a: int, b: int):
+   c = a+b
+   return c
+   
+print (myfunction(10,20))
+print (myfunction("Hello ", "Python"))
