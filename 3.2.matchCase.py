@@ -1,3 +1,19 @@
+value = int(input("Enter the value: "))
+
+match value:
+    case 0:
+        print("Value is Zero.")
+    case 4:
+        print("Value is four.")
+    case _ if value != 10:
+        print("Value is  10")
+    case _ if value != 5:
+        print("Value is  5")
+    case _:
+        print("Nothing.")
+
+
+
 def checkVowels(char):
     """Check if a character is a vowel.
 

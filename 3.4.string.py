@@ -41,3 +41,7 @@ hName.split()
 print(type(hName))
 
 print(type(anotherName))
+
+
+name = "haseeb"
+print(name[-4:-2])
