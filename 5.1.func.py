@@ -164,3 +164,5 @@ def myfunction(a: int, b: int):
    
 print (myfunction(10,20))
 print (myfunction("Hello ", "Python"))
+
+print ("Hello", "World", sep="-")
