@@ -142,10 +142,9 @@ def print_info2( arg1, *vartuple ):
     return;
 
 # Now you can call printinfo function
-something = [23,43,5,65,34]
-
-print_info( 10 )
-print_info( 70, 60, 50 )
+# something = [23,43,5,65,34]
+# print_info( 10 )
+# print_info( 70, 60, 50 )
 print_info2( something )
 
 # //////////////////////////////////////////////////////////////////////
