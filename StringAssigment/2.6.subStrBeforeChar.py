@@ -5,3 +5,7 @@
 # https://www.w3resource.com/python
 
 
+string = "remote: Resolving deltas: 100% (2/2), completed with 2 local objects."
+newString = string.split(",")
+subString = newString[1]
+print(subString)
