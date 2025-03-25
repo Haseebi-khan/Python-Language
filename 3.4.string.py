@@ -45,3 +45,5 @@ print(type(anotherName))
 
 name = "haseeb"
 print(name[-4:-2])
+
+print(name[-4::-2])
