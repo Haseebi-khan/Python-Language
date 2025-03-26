@@ -130,3 +130,11 @@ for value in newlist2:
 else:
     # Statement inside the else block
     print ("Loop-else Executed")
+
+# i still dont understand it well. i have to read doc once again.
+
+first_numbers = [34,546,56,7,33,4565,332]
+second_numbers = [3434,234,3,56,87,34,342,980]
+
+max_width = max(len(num) for num in str(first_numbers + second_numbers)) + 2
+print(max_width)
