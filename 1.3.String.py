@@ -1,3 +1,5 @@
+# string is IMMUTEABLE
+
 string = str("Haseeb khan")
 print(string)
 print(string[2:5])
