@@ -50,3 +50,25 @@ print ("Good bye!")
 #    while expression:
 #       statement(s)
 #    statement(s)
+
+i =0
+while i < 10:
+    print(i, end='')
+    i += 1
+    
+    
+i =10
+while i > 0 :
+    print(i, end='')
+    i -= 1
+    
+    
+    
+# 1 4 9 16 25 36 49
+    
+i = 1
+while i*i <= 100:
+    print(i*i, end=' ')
+    i += 1
+
+    
