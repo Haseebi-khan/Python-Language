@@ -1,3 +1,6 @@
+# property automatically calculate percentage in Pythons.
+
+
 class Student:
     def __init__(self, math, phy, chem, bio):
         self.math = math
@@ -25,3 +28,4 @@ print("Percentage:", s.percentage)
 # =============================================================================================================
 
 
+Geater And Setter Method
