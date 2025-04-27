@@ -1,4 +1,5 @@
-# property automatically calculate percentage in Pythons.
+# property automatically calculate percentage in Pythons at run time.
+# calculate the phy
 
 
 class Student:
@@ -28,4 +29,4 @@ print("Percentage:", s.percentage)
 # =============================================================================================================
 
 
-Geater And Setter Method
+# Geater And Setter Method
