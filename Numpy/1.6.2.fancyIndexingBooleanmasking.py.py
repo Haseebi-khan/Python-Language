@@ -14,5 +14,9 @@ print(arr[[0,4,2,6]])
 # [6 2 3 3]
 # ////////////////////////  OUTPUT  //////////////////////
 
+# boolean masking -> filter data on condition bases
+
+print(arr > 25)
+print(arr[arr>25])
 
 

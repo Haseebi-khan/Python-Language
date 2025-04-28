@@ -7,8 +7,9 @@ arr = np.array(list2)
 
 
 print("Index 10: ",arr[0])
-print("Index 10: ",arr[-1])
+print(" revese last indexing :",arr[-1])
 #  sliceing
+print(" revese :",arr[::-1])
 print("Index 10: ",arr[1:5])
 print("Index 10: ",arr[:-1])
 print("Index 10: ",arr[:-1:2])

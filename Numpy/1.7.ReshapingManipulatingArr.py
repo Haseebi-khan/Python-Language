@@ -16,3 +16,8 @@ arr = np.array(list2)
 
 _2dimensionalArr = arr.reshape(3,4)
 print(_2dimensionalArr)
+
+
+# [[ 6  5  3  3]
+#  [ 2  4  3 45]
+#  [34 23 43 12]]
