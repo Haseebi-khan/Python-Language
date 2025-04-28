@@ -27,3 +27,5 @@ print(np.array_split(arr2, 2))
 
 newSplit = np.split(arr, 2)
 print(newSplit)
+
+# next BoardCasting 

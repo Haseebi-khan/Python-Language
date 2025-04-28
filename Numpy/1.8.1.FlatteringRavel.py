@@ -9,8 +9,8 @@ arr = np.array([list2,list3])
 # ravel -> veiw
 # flatten -> copy
 
-print("Just Shows Veiw",arr.ravel(),"\n\n\n\n")
-print("Create Copy of npArr" ,arr.flatten())
+print("Just Shows Veiw using Ravel",arr.ravel(),"\n\n\n\n")
+print("Create Copy of npArr using flatten" ,arr.flatten())
 print("Create Copy of npArr with Tpye" ,type(arr.flatten()))
 
 
