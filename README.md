@@ -65,10 +65,6 @@ This repository is organized by modules, with notes, code examples, and complete
     - Class Structure and Object Lifecycle
     - Inheritance and Advanced Object Concepts
 
-14. **Relational Databases and SQLite**
-    - Database Design and Relationship Building
-    - Working with SQL Joins and Many-to-Many Relationships
-
 15. **Data Visualization**
     - Visualizing Data with Python
     - Data Projects (e.g., PageRank, Mailing Lists)
