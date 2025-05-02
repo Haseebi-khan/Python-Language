@@ -78,14 +78,28 @@ df['Mixed_Info'] = df['Mixed_Info'].fillna(df['Mixed_Info'].mean())
 df
 
 df.describe()
+df.shape
+print(df.dtypes)
+# =====================================================================
+
+ID                              int64
+Measurements                  float64
+Sensor_Reading                float64
+Measurement_to_SensorRatio    float64
+Category                       object
+Mixed_Info                    float64
+Range_Meters                  float64
+dtype: object
+
+# =====================================================================
+
+df.to_csv(r"D:\Codes\Python\Python-Language\DatasetPractice\practice_dataset.csv", index=False)
 
 
-# # df.fillna(0, inplace=True)
-# df['Sensor_Reading'].fillna(df["Sensor_Reading"].mean(), inplace=True)
-# df['Measurement_to_SensorRatio'].fillna(df["Measurement_to_SensorRatio"].mean(), inplace=True)
-# df['Range_Meters'].fillna(df["Range_Meters"].mean(), inplace=True)
 
 
 
+updated_DF = pd.read_csv(r"D:\Codes\Python\Python-Language\DatasetPractice\practice_dataset.csv", encoding="latin-1")
+ 
 
-
+updated_DF
