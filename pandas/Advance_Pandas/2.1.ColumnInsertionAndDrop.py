@@ -28,5 +28,5 @@ print(df)
 
 df.to_csv(r"D:\Codes\Python\Python-Language\DatasetPractice\practice_dataset.csv",)
 
-# Inplace dircetly delete the column for original file.
+# Inplace:modify dircetly, delete the column in original file.
 df.drop(columns=["Unnamed: 0"], inplace=True)

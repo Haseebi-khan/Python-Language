@@ -41,14 +41,12 @@ df.loc[ 4, "Measurements" ] =  0
 print(df)
 
 
-
-
 ##################     Second Method     ##################
  
 df["Range_Meters"] = df["Range_Meters"] - 100
 
 print(df)
 
-OriginaldfToCheckChanges = pd.read_csv(r"D:\Codes\Python\Python-Language\DatasetPractice\practice_dataset.csv", encoding="latin-1")
+# OriginaldfToCheckChanges = pd.read_csv(r"D:\Codes\Python\Python-Language\DatasetPractice\practice_dataset.csv", encoding="latin-1")
  
-print(OriginaldfToCheckChanges)
+# print(OriginaldfToCheckChanges)
