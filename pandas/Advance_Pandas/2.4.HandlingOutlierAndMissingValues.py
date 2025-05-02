@@ -3,7 +3,7 @@ import numpy as np
 
 df = pd.read_csv(r"D:\Codes\Python\Python-Language\DatasetPractice\practice_dataset.csv", encoding="latin-1")
 
-print(df)
+df
 
 # NaN (not a number.)
 # None (for object data)
@@ -47,16 +47,45 @@ print(df.isnull().sum())
 
 df.replace([np.inf, -np.inf], np.nan, inplace=True)
 
+print(df['Measurements'].mean())
+
+for col in ["ID","Measurements"]:
+    meanValue = df[col].mean()
+    df[col] = df[col].fillna(meanValue)
+    
+
+df["Category"] = df["Category"].fillna(df["Category"].mode()[0])
+
+df["Category"] = df["Category"].str.capitalize()
+
+df
 
 
-# df.fillna(0, inplace=True)
-df['Measurements'].fillna(df["Measurements"].mean(), inplace=True)
-df['Sensor_Reading'].fillna(df["Sensor_Reading"].mean(), inplace=True)
-df['Measurement_to_SensorRatio'].fillna(df["Measurement_to_SensorRatio"].mean(), inplace=True)
-df['Range_Meters'].fillna(df["Range_Meters"].mean(), inplace=True)
+print(df['Mixed_Info'].unique())
 
+maping = {'nine' : 9, 'True': 1, 'FIVE': 5, 'False': 0}
+
+df['Mixed_Info'] = df['Mixed_Info'].replace(maping)
+
+# =====================================================================
+# TypeError: can only concatenate str (not "int") to str
+# =====================================================================
+
+df['Mixed_Info'] = pd.to_numeric(df['Mixed_Info'], errors='ignore')
+
+df['Mixed_Info'] = df['Mixed_Info'].fillna(df['Mixed_Info'].mean())
+
+df
 
 df.describe()
+
+
+# # df.fillna(0, inplace=True)
+# df['Sensor_Reading'].fillna(df["Sensor_Reading"].mean(), inplace=True)
+# df['Measurement_to_SensorRatio'].fillna(df["Measurement_to_SensorRatio"].mean(), inplace=True)
+# df['Range_Meters'].fillna(df["Range_Meters"].mean(), inplace=True)
+
+
 
 
 
