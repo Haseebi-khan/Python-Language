@@ -50,3 +50,14 @@ print(df)
 # OriginaldfToCheckChanges = pd.read_csv(r"D:\Codes\Python\Python-Language\DatasetPractice\practice_dataset.csv", encoding="latin-1")
  
 # print(OriginaldfToCheckChanges)
+
+
+
+
+# /////////////////////////////////////////////////////////////////
+# //////////////////   Update Column Name /////////////////////////
+# /////////////////////////////////////////////////////////////////
+
+
+df.rename(columns={'B': 'Y'}, inplace=True)
+
