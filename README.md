@@ -1,8 +1,3 @@
-It looks like your Markdown content contains some unresolved merge conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`). These typically appear when a Git merge results in conflicts between branches.
-
-Here’s a cleaned-up and complete version of your Markdown file:
-
-````markdown
 # Complete Python Course with Libraries
 
 This repository contains my comprehensive Python practice and learning journey. The course covers fundamental to advanced Python concepts, along with practical implementations using popular libraries such as Pandas, NumPy, and Matplotlib.
