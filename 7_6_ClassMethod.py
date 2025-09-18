@@ -13,11 +13,11 @@ class Person:
     @classmethod
     def changeing(cls, name1,name2,name3):
         
-        print(f"{Person.name} var is going to game with {name1}")
+        print(f"{Person.name} var is going to play with {name1}")
         cls.name = name1
-        print(f"{cls.name2} var is going to game with {name2}")
+        print(f"{cls.name2} var is going to play with {name2}")
         cls.name2 = name2
-        print(f"{cls.name} var is going to game with {name3}")
+        print(f"{cls.name} var is going to play with {name3}")
         cls.name = name3
         
        
