@@ -1,0 +1,14 @@
+#!/bin/bash
+# This script saves all Python packages in the current environment
+pip freeze > requirements.txt
+
+
+# Make it executable
+
+chmod +x save_reqs.sh
+
+
+# to all requirements 
+
+pip install -r requirements.txt
+ 
