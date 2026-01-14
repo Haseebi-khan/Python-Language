@@ -1,0 +1,16 @@
+{
+    "name": "Haseeb Khan",
+    "age" : 20,
+    "isProgrammer" : true,
+    "Hobbies": ["weight", "Lifting"],
+    "friend" : [{
+        "name" : "sadas",
+        "ceo" : false,
+        "age" : 21
+    },
+    {
+        "name" : "sadas",
+        "ceo" : false,
+        "age" : 21
+    }]
+}
