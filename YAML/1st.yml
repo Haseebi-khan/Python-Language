@@ -1,0 +1,108 @@
+Name: Haseeb
+age: 54
+working: False
+# inline comment 
+
+
+team:
+  AI: Haseeb Khan
+  WEB: unnone
+  etc: sadjaskd
+
+
+is_cold: true
+is_hot: yes
+not_hot: false
+hot: no
+
+
+not_cold: ~  # meaning NULL
+not_cold_2: NULL
+not_cold_3: null
+
+
+
+morning: 2026-01-15
+time: 2026-01-15 08:30:00
+
+# list 
+
+hobibies: 
+  - football
+  - cricket
+  - online game
+
+hobibies_2: [ aihd, askjdhjk, kjsahdjka]
+
+
+# Nested List
+
+Team_Names:
+  - name1: Khan
+    First_Name:
+      - Haseeb
+    Last:
+      - Ullah
+  - name2:
+    not_json:
+      - Xml
+      - json
+
+
+instruction: |     # multi line string 
+  kldjhfkldsjfh
+  sdfjsdklf
+  asdjlsdlkfsd
+  sdfkljxsdkljfsd
+  sdgklsdfhjsd
+  sdkl
+
+
+instruction3: >     # multi line string 
+  sdklfjklsdsdfhijosdf
+  sdhsdklf
+  sdjsdaf
+  sadfijsadf
+  ldsff
+  sadfkosdf
+  asdjlsdlkfsd
+
+
+
+default_chai_base: &default_base
+  tea: black_tea
+  water: 200ml
+  brewing_time: 5
+
+morning_chai:
+  <<: *default_base
+  milk: 100ml
+
+evening_chai:
+  <<: *default_base
+  milk: 200ml
+
+# num as string
+
+zip_code: !!str 5765675
+
+count: !!int "234324"
+
+unique: !!set
+  ? newthings
+ 
+
+# dict
+
+menu: 
+  - id: 1
+    name: Haseeb Khan
+    age: 1635
+    timeing: sdfnjksdhjfklsd
+
+  - id: 2 
+    name: new_things
+    asds: asjkhdkjashd 
+    jkasdhsadklj: asjkhdkjashd
+  
+  
