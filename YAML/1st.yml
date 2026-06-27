@@ -1,55 +1,115 @@
-Name: Haseeb
+# -----------------------------
+# Basic variables (scalars)
+# -----------------------------
+
+# string variable
+name: 'Haseeb'
+
+# integer variable
 age: 54
-working: False
-# inline comment 
 
+# boolean variable
+working: false
 
+# -----------------------------
+# Nested dictionary (object)
+# -----------------------------
+
+# team information (mapping)
 team:
+  # AI team lead name
   AI: Haseeb Khan
+
+  # WEB team (unknown)
   WEB: unnone
+
+  # miscellaneous field
   etc: sadjaskd
 
+# -----------------------------
+# Boolean variations
+# -----------------------------
 
+# boolean true
 is_cold: true
+
+# boolean true (yes = true)
 is_hot: yes
+
+# boolean false
 not_hot: false
+
+# boolean false (no = false)
 hot: no
 
+# -----------------------------
+# Null values
+# -----------------------------
 
-not_cold: ~  # meaning NULL
+# null using tilde
+not_cold: ~
+
+# null using NULL keyword
 not_cold_2: NULL
+
+# null using lowercase null
 not_cold_3: null
 
+# -----------------------------
+# Date and time
+# -----------------------------
 
-
+# date value (YYYY-MM-DD)
 morning: 2026-01-15
+
+# datetime value
 time: 2026-01-15 08:30:00
 
-# list 
+# -----------------------------
+# Lists (block style)
+# -----------------------------
 
-hobibies: 
-  - football
-  - cricket
-  - online game
+# list of hobbies
+hobibies:
+  - football     # first item
+  - cricket      # second item
+  - online game  # third item
 
-hobibies_2: [ aihd, askjdhjk, kjsahdjka]
+# -----------------------------
+# Lists (inline / flow style)
+# -----------------------------
 
+# inline list
+hobibies_2: [aihd, askjdhjk, kjsahdjka]
 
-# Nested List
+# -----------------------------
+# Nested list with dictionaries
+# -----------------------------
 
+# list containing objects
 Team_Names:
+  # first object
   - name1: Khan
+    # first name list
     First_Name:
       - Haseeb
+    # last name list
     Last:
       - Ullah
+
+  # second object
   - name2:
-    not_json:
-      - Xml
-      - json
+      # list under nested key
+      not_json:
+        - Xml
+        - json
 
+# -----------------------------
+# Multiline strings
+# -----------------------------
 
-instruction: |     # multi line string 
+# literal block (keeps line breaks)
+instruction: |
   kldjhfkldsjfh
   sdfjsdklf
   asdjlsdlkfsd
@@ -57,8 +117,8 @@ instruction: |     # multi line string
   sdgklsdfhjsd
   sdkl
 
-
-instruction3: >     # multi line string 
+# folded block (joins lines into one)
+instruction3: >
   sdklfjklsdsdfhijosdf
   sdhsdklf
   sdjsdaf
@@ -67,42 +127,58 @@ instruction3: >     # multi line string
   sadfkosdf
   asdjlsdlkfsd
 
+# -----------------------------
+# Anchors & aliases (reuse data)
+# -----------------------------
 
-
+# base configuration with anchor
 default_chai_base: &default_base
-  tea: black_tea
-  water: 200ml
-  brewing_time: 5
+  tea: black_tea        # tea type
+  water: 200ml          # water amount
+  brewing_time: 5       # minutes
 
+# morning chai inherits base
 morning_chai:
   <<: *default_base
   milk: 100ml
 
+# evening chai inherits base
 evening_chai:
   <<: *default_base
   milk: 200ml
 
-# num as string
+# -----------------------------
+# Explicit data types
+# -----------------------------
 
+# force number to string
 zip_code: !!str 5765675
 
+# force string to integer
 count: !!int "234324"
 
+# -----------------------------
+# Set (unique values only)
+# -----------------------------
+
+# YAML set
 unique: !!set
   ? newthings
- 
 
-# dict
+# -----------------------------
+# List of dictionaries
+# -----------------------------
 
-menu: 
+# menu items list
+menu:
+  # first item
   - id: 1
     name: Haseeb Khan
     age: 1635
     timeing: sdfnjksdhjfklsd
 
-  - id: 2 
+  # second item
+  - id: 2
     name: new_things
-    asds: asjkhdkjashd 
+    asds: asjkhdkjashd
     jkasdhsadklj: asjkhdkjashd
-  
-  
